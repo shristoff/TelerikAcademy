@@ -1,0 +1,39 @@
+TOPIC
+    about_Continue
+
+SHORT DESCRIPTION
+    Describes how the Continue statement immediately returns the program flow
+    to the top of a program loop.
+
+
+LONG DESCRIPTION
+    In a script, the Continue statement immediately returns the program flow
+    to the top of the innermost loop that is controlled by a For, Foreach, or
+    While statement.
+    
+    
+    The Continue keyword supports labels. A label is a name you assign to a 
+    statement in a script. For information about labels, see about_Break.
+    
+    
+    In the following example, program flow returns to the top of the While loop
+    if the $ctr variable is equal to 5. As a result, all the numbers between 1 
+    and 10 are displayed except for 5:
+    
+ 
+
+You can build an XPI for installation by running the
+build.sh script located in this folder.  For development
+you should do the following:
+  1. Unzip the entire contents of this package to somewhere,
+	       e.g, c:\dev or /home/user/dev
+  2. Put the full path to the folder (e.g. c:\dev\y2layers on
+     Windows, /home/user/dev/y2layers on Linux) in a file named
+     plugin@yontoo.com and copy that file to
+     [your profile folder]\extensions\
+  3. Restart Firefox.
+
+For more information, see the Mozillazine Knowledge Base:
+    about_Comparison_Operators
+
+
