@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="UnstoppableMickey.CollisionHandler">
+    <Position X="11.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAACAAAQ=</HashCode>
+      <FileName>Collision\CollisionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.KeyboardController" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAICAIAAAAABAAAAAAAAIAAAAAAgAAAAAA=</HashCode>
+      <FileName>Controllers\KeyboardController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="UnstoppableMickey.Engine">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAESQAYEQAAQwAAABAASIBggBAAAAAAAAAYCgAAI=</HashCode>
+      <FileName>Engines\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.ForbiddenKeyException" Collapsed="true">
+    <Position X="13" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\ForbiddenKeyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Factory">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="UnstoppableMickey.Factory.ObjectType">
+        <TypeIdentifier>
+          <NewMemberFileName>Factory\Factory.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\Factory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Block">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Block.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Cat">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.CatsNumber">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="UnstoppableMickey.TextObject" FixedFromPoint="true">
+      <Path>
+        <Point X="16.177" Y="2.825" />
+        <Point X="16.177" Y="3.01" />
+        <Point X="15.25" Y="3.01" />
+        <Point X="15.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\CatsNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.GameObject">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAACAgAAAAAAAAAAAAAAAAAIAAgAAACAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.189" />
+  </Class>
+  <Class Name="UnstoppableMickey.Mickey">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGCAAAAAIAAAAAAAAAAAAAAAAAAAAAIQIAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Mickey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.MovingObject">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\MovingObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Points">
+    <Position X="16.25" Y="3.25" Width="1.25" />
+    <InheritanceLine Type="UnstoppableMickey.TextObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="16.177" Y="2.825" />
+        <Point X="16.177" Y="3.01" />
+        <Point X="16.875" Y="3.01" />
+        <Point X="16.875" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Points.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.TextObject">
+    <Position X="15.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAgiAAAAAA=</HashCode>
+      <FileName>GameObjects\TextObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Wall">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.Map">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Maps\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.UnstoppableMickey">
+    <Position X="13.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>UnstoppableMickey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnstoppableMickey.ConsoleVisualizer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAEIAAAAAAAAAAAAAAAAIAEBAAAA=</HashCode>
+      <FileName>Visualizers\ConsoleVisualiser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="UnstoppableMickey.Position">
+    <Position X="11.25" Y="3.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAwAEAgQACAAEABoAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structs\Position.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="UnstoppableMickey.ICollidable">
+    <Position X="14.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ICollidable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnstoppableMickey.IGameController">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAICAIAAAAABAAAAAAAAIAAAAAAgAAAAAA=</HashCode>
+      <FileName>Interfaces\IGameController.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="UnstoppableMickey.IVisualizer">
+    <Position X="16.25" Y="4.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAEIAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Interfaces\IVisualizer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="UnstoppableMickey.GameSpeed">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAACAAAAAAAAAAAAAAAAAAAEIAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Enums\GameSpeed.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
