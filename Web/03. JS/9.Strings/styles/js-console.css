@@ -8,6 +8,9 @@ body {
 body input[text] {
   width: 120px;
 }
+body #text4 {
+  width: 560px;
+}
 body textarea {
   width: 400px;
   height: 105px;
