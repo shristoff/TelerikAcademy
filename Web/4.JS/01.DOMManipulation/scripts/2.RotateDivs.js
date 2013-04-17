@@ -9,10 +9,12 @@ var numOfElements = divToRotate.length;
 var elementWidth = divToRotate[0].offsetWidth;
 var centerLeft = windowWidth / 2 - elementWidth / 2;
 var centerTop = windowHeight / 2 - elementWidth / 2;
+var millisecondsPerRevolution = 100;
+var degreesPerMilisecond = (Math.PI * 2) / millisecondsPerRevolution;
 
 positionOnCircle(divToRotate, 200);
 
-function rotate(element, radius, startAngle) {
+function rotate(element, radius, startAngle, startTime) {
     var x, y, left, top;
 
     x = Math.cos(startAngle);
@@ -22,13 +24,14 @@ function rotate(element, radius, startAngle) {
     element.style.left = centerLeft + left + 'px';
     element.style.top = centerTop + top + 'px';
     // The step of the rotation is 1 degree = 2 * Math.PI / 360 = Math.PI / 180.
-    startAngle = startAngle + Math.PI / 180;
+    var now = performance.now();
+    startAngle = startAngle + degreesPerMilisecond * (now - startTime);
 
     // The setTumeout loops the whole function at given interval in miliseconds.
     // Timeount = 100 / 360 means that the function should be executed 360 times per 100 ms,
     // which means that a full turn lasts 100 ms, because the step of rotation is 1 degree,
     // although it seems to me much slower, I don't know why?!
-    setTimeout(function () { rotate(element, radius, startAngle) }, 100 / 360);
+    setTimeout(function () { rotate(element, radius, startAngle, now) }, 100 / 360);
 }
 
 function positionOnCircle(elementsCollection, radius) {
@@ -49,6 +52,6 @@ function positionOnCircle(elementsCollection, radius) {
 // Every of the 5 elements is positioned in one sector (1/5 of the circle = 1/5 * 2 * Math.PI)
 function startRotation() {
     for (var sector = 0; sector < numOfElements; sector++) {
-        rotate(divToRotate[sector], 200, 2 * sector * Math.PI / numOfElements);
+        rotate(divToRotate[sector], 200, 2 * sector * Math.PI / numOfElements, performance.now());
     }
 }
